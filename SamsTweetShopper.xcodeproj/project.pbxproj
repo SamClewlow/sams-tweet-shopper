@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F46037641B6E47FA00742DA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037631B6E47FA00742DA0 /* main.m */; };
+		F46037671B6E47FA00742DA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037661B6E47FA00742DA0 /* AppDelegate.m */; };
+		F460376D1B6E47FA00742DA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F460376B1B6E47FA00742DA0 /* Main.storyboard */; };
+		F460376F1B6E47FA00742DA0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F460376E1B6E47FA00742DA0 /* Images.xcassets */; };
+		F46037721B6E47FA00742DA0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F46037701B6E47FA00742DA0 /* LaunchScreen.xib */; };
+		F460377E1B6E47FA00742DA0 /* SamsTweetShopperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F460377D1B6E47FA00742DA0 /* SamsTweetShopperTests.m */; };
+		F46037951B6E4BCC00742DA0 /* STSSearchResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037941B6E4BCC00742DA0 /* STSSearchResultsViewController.m */; };
+		F46037981B6E4C3E00742DA0 /* STSSearchInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037971B6E4C3E00742DA0 /* STSSearchInputViewController.m */; };
+		F460379B1B6E4E5E00742DA0 /* STSFavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F460379A1B6E4E5E00742DA0 /* STSFavoritesViewController.m */; };
+		F46037AA1B6E503800742DA0 /* STSFavoritesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037A91B6E503800742DA0 /* STSFavoritesPresenter.m */; };
+		F46037AE1B6E506900742DA0 /* STSSearchResultsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037AD1B6E506900742DA0 /* STSSearchResultsPresenter.m */; };
+		F46037B21B6E50A300742DA0 /* STSSearchInputPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037B11B6E50A300742DA0 /* STSSearchInputPresenter.m */; };
+		F46037B61B6E5E1B00742DA0 /* STSTwitterAccessInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037B51B6E5E1B00742DA0 /* STSTwitterAccessInteractor.m */; };
+		F46037B91B6E5E3D00742DA0 /* STSSearchTermValidInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037B81B6E5E3D00742DA0 /* STSSearchTermValidInteractor.m */; };
+		F46037BE1B6E784B00742DA0 /* STSSearchInputWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037BD1B6E784B00742DA0 /* STSSearchInputWireframe.m */; };
+		F46037C31B6E7ADA00742DA0 /* STSFavoritesWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037C21B6E7ADA00742DA0 /* STSFavoritesWireframe.m */; };
+		F46037C61B6E7BF000742DA0 /* STSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037C51B6E7BF000742DA0 /* STSConstants.m */; };
+		F46037CA1B6E99D200742DA0 /* STSSearchResultsWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037C91B6E99D200742DA0 /* STSSearchResultsWireframe.m */; };
+		F46037CE1B6E9B9000742DA0 /* STSTwitterSearchInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037CD1B6E9B9000742DA0 /* STSTwitterSearchInteractor.m */; };
+		F46037D21B6E9BEE00742DA0 /* STSSearchFavoritesInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037D11B6E9BEE00742DA0 /* STSSearchFavoritesInteractor.m */; };
+		F46037DA1B6EAF2600742DA0 /* STSSearchResultViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037D91B6EAF2600742DA0 /* STSSearchResultViewModel.m */; };
+		F46037DF1B6EB49500742DA0 /* STSSearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037DD1B6EB49500742DA0 /* STSSearchResultTableViewCell.m */; };
+		F46037E01B6EB49500742DA0 /* STSSearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F46037DE1B6EB49500742DA0 /* STSSearchResultTableViewCell.xib */; };
+		F46037E61B6EB8C500742DA0 /* SCImageCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037E31B6EB8C500742DA0 /* SCImageCacheService.m */; };
+		F46037E71B6EB8C500742DA0 /* SCNetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037E51B6EB8C500742DA0 /* SCNetworkService.m */; };
+		F46037EA1B6EBC5600742DA0 /* STSSearchResultTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037E91B6EBC5600742DA0 /* STSSearchResultTweet.m */; };
+		F46037F11B6EDBE700742DA0 /* STSCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037F01B6EDBE700742DA0 /* STSCoreDataManager.m */; };
+		F46037F41B6EDCC700742DA0 /* STSFavoritesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F46037F21B6EDCC700742DA0 /* STSFavoritesDataModel.xcdatamodeld */; };
+		F46037F71B6EDDC300742DA0 /* STSManagedFavouriteTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037F61B6EDDC300742DA0 /* STSManagedFavouriteTweet.m */; };
+		F46037FF1B6EFFD600742DA0 /* STSFavoritesDataInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = F46037FE1B6EFFD600742DA0 /* STSFavoritesDataInteractor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F46037781B6E47FA00742DA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F46037561B6E47FA00742DA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F460375D1B6E47FA00742DA0;
+			remoteInfo = SamsTweetShopper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F460375E1B6E47FA00742DA0 /* SamsTweetShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamsTweetShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F46037621B6E47FA00742DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F46037631B6E47FA00742DA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F46037651B6E47FA00742DA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F46037661B6E47FA00742DA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F460376C1B6E47FA00742DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F460376E1B6E47FA00742DA0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F46037711B6E47FA00742DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F46037771B6E47FA00742DA0 /* SamsTweetShopperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamsTweetShopperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F460377C1B6E47FA00742DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F460377D1B6E47FA00742DA0 /* SamsTweetShopperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SamsTweetShopperTests.m; sourceTree = "<group>"; };
+		F46037931B6E4BCC00742DA0 /* STSSearchResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSSearchResultsViewController.h; path = "Modules/Search Results Module/View/STSSearchResultsViewController.h"; sourceTree = "<group>"; };
+		F46037941B6E4BCC00742DA0 /* STSSearchResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSSearchResultsViewController.m; path = "Modules/Search Results Module/View/STSSearchResultsViewController.m"; sourceTree = "<group>"; };
+		F46037961B6E4C3E00742DA0 /* STSSearchInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchInputViewController.h; sourceTree = "<group>"; };
+		F46037971B6E4C3E00742DA0 /* STSSearchInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSSearchInputViewController.m; sourceTree = "<group>"; };
+		F46037991B6E4E5E00742DA0 /* STSFavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSFavoritesViewController.h; sourceTree = "<group>"; };
+		F460379A1B6E4E5E00742DA0 /* STSFavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSFavoritesViewController.m; sourceTree = "<group>"; };
+		F460379C1B6E4EC600742DA0 /* STSFavoritesViewInterace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSFavoritesViewInterace.h; sourceTree = "<group>"; };
+		F46037A61B6E4FD400742DA0 /* STSSearchResultsViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSSearchResultsViewInterface.h; path = "Modules/Search Results Module/View/STSSearchResultsViewInterface.h"; sourceTree = "<group>"; };
+		F46037A71B6E4FE900742DA0 /* STSSearchInputViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchInputViewInterface.h; sourceTree = "<group>"; };
+		F46037A81B6E503800742DA0 /* STSFavoritesPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSFavoritesPresenter.h; sourceTree = "<group>"; };
+		F46037A91B6E503800742DA0 /* STSFavoritesPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSFavoritesPresenter.m; sourceTree = "<group>"; };
+		F46037AB1B6E504800742DA0 /* STSFavoritesPresenterInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSFavoritesPresenterInterface.h; sourceTree = "<group>"; };
+		F46037AC1B6E506900742DA0 /* STSSearchResultsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchResultsPresenter.h; sourceTree = "<group>"; };
+		F46037AD1B6E506900742DA0 /* STSSearchResultsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSSearchResultsPresenter.m; sourceTree = "<group>"; };
+		F46037AF1B6E507800742DA0 /* STSSearchResultsPresenterInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchResultsPresenterInterface.h; sourceTree = "<group>"; };
+		F46037B01B6E50A300742DA0 /* STSSearchInputPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchInputPresenter.h; sourceTree = "<group>"; };
+		F46037B11B6E50A300742DA0 /* STSSearchInputPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSSearchInputPresenter.m; sourceTree = "<group>"; };
+		F46037B31B6E50B100742DA0 /* STSSearchInputPresenterInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchInputPresenterInterface.h; sourceTree = "<group>"; };
+		F46037B41B6E5E1B00742DA0 /* STSTwitterAccessInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSTwitterAccessInteractor.h; sourceTree = "<group>"; };
+		F46037B51B6E5E1B00742DA0 /* STSTwitterAccessInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSTwitterAccessInteractor.m; sourceTree = "<group>"; };
+		F46037B71B6E5E3D00742DA0 /* STSSearchTermValidInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchTermValidInteractor.h; sourceTree = "<group>"; };
+		F46037B81B6E5E3D00742DA0 /* STSSearchTermValidInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSSearchTermValidInteractor.m; sourceTree = "<group>"; };
+		F46037BA1B6E5E7A00742DA0 /* STSSearchTermValidInteractorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchTermValidInteractorInterface.h; sourceTree = "<group>"; };
+		F46037BB1B6E5E9600742DA0 /* STSTwitterAccessInteractorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSTwitterAccessInteractorInterface.h; sourceTree = "<group>"; };
+		F46037BC1B6E784B00742DA0 /* STSSearchInputWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchInputWireframe.h; sourceTree = "<group>"; };
+		F46037BD1B6E784B00742DA0 /* STSSearchInputWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSSearchInputWireframe.m; sourceTree = "<group>"; };
+		F46037BF1B6E786600742DA0 /* STSSearchInputModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchInputModuleInterface.h; sourceTree = "<group>"; };
+		F46037C01B6E78FA00742DA0 /* STSFavoritesModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSFavoritesModuleInterface.h; sourceTree = "<group>"; };
+		F46037C11B6E7ADA00742DA0 /* STSFavoritesWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSFavoritesWireframe.h; sourceTree = "<group>"; };
+		F46037C21B6E7ADA00742DA0 /* STSFavoritesWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSFavoritesWireframe.m; sourceTree = "<group>"; };
+		F46037C41B6E7BF000742DA0 /* STSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSConstants.h; path = "Shared Services/STSConstants.h"; sourceTree = "<group>"; };
+		F46037C51B6E7BF000742DA0 /* STSConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSConstants.m; path = "Shared Services/STSConstants.m"; sourceTree = "<group>"; };
+		F46037C81B6E99D200742DA0 /* STSSearchResultsWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchResultsWireframe.h; sourceTree = "<group>"; };
+		F46037C91B6E99D200742DA0 /* STSSearchResultsWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSSearchResultsWireframe.m; sourceTree = "<group>"; };
+		F46037CB1B6E99E300742DA0 /* STSSearchResultsModuleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchResultsModuleInterface.h; sourceTree = "<group>"; };
+		F46037CC1B6E9B9000742DA0 /* STSTwitterSearchInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSTwitterSearchInteractor.h; sourceTree = "<group>"; };
+		F46037CD1B6E9B9000742DA0 /* STSTwitterSearchInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSTwitterSearchInteractor.m; sourceTree = "<group>"; };
+		F46037CF1B6E9B9F00742DA0 /* STSTwitterSearchInteractorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSTwitterSearchInteractorInterface.h; sourceTree = "<group>"; };
+		F46037D01B6E9BEE00742DA0 /* STSSearchFavoritesInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchFavoritesInteractor.h; sourceTree = "<group>"; };
+		F46037D11B6E9BEE00742DA0 /* STSSearchFavoritesInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSSearchFavoritesInteractor.m; sourceTree = "<group>"; };
+		F46037D31B6E9C0100742DA0 /* STSSearchFavoritesInteractorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSSearchFavoritesInteractorInterface.h; sourceTree = "<group>"; };
+		F46037D81B6EAF2600742DA0 /* STSSearchResultViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSSearchResultViewModel.h; path = "Modules/Search Results Module/Model Objects/STSSearchResultViewModel.h"; sourceTree = "<group>"; };
+		F46037D91B6EAF2600742DA0 /* STSSearchResultViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSSearchResultViewModel.m; path = "Modules/Search Results Module/Model Objects/STSSearchResultViewModel.m"; sourceTree = "<group>"; };
+		F46037DC1B6EB49500742DA0 /* STSSearchResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSSearchResultTableViewCell.h; path = "Modules/Search Results Module/View/CElls/STSSearchResultTableViewCell.h"; sourceTree = "<group>"; };
+		F46037DD1B6EB49500742DA0 /* STSSearchResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSSearchResultTableViewCell.m; path = "Modules/Search Results Module/View/CElls/STSSearchResultTableViewCell.m"; sourceTree = "<group>"; };
+		F46037DE1B6EB49500742DA0 /* STSSearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = STSSearchResultTableViewCell.xib; path = "Modules/Search Results Module/View/CElls/STSSearchResultTableViewCell.xib"; sourceTree = "<group>"; };
+		F46037E21B6EB8C500742DA0 /* SCImageCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageCacheService.h; sourceTree = "<group>"; };
+		F46037E31B6EB8C500742DA0 /* SCImageCacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageCacheService.m; sourceTree = "<group>"; };
+		F46037E41B6EB8C500742DA0 /* SCNetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNetworkService.h; sourceTree = "<group>"; };
+		F46037E51B6EB8C500742DA0 /* SCNetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNetworkService.m; sourceTree = "<group>"; };
+		F46037E81B6EBC5600742DA0 /* STSSearchResultTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSSearchResultTweet.h; path = "Modules/Search Results Module/Model Objects/STSSearchResultTweet.h"; sourceTree = "<group>"; };
+		F46037E91B6EBC5600742DA0 /* STSSearchResultTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSSearchResultTweet.m; path = "Modules/Search Results Module/Model Objects/STSSearchResultTweet.m"; sourceTree = "<group>"; };
+		F46037EF1B6EDBE700742DA0 /* STSCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSCoreDataManager.h; path = "Shared Services/STSCoreDataManager.h"; sourceTree = "<group>"; };
+		F46037F01B6EDBE700742DA0 /* STSCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSCoreDataManager.m; path = "Shared Services/STSCoreDataManager.m"; sourceTree = "<group>"; };
+		F46037F31B6EDCC700742DA0 /* STSFavoritesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = STSFavoritesDataModel.xcdatamodel; sourceTree = "<group>"; };
+		F46037F51B6EDDC300742DA0 /* STSManagedFavouriteTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSManagedFavouriteTweet.h; path = "Shared Services/STSManagedFavouriteTweet.h"; sourceTree = "<group>"; };
+		F46037F61B6EDDC300742DA0 /* STSManagedFavouriteTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STSManagedFavouriteTweet.m; path = "Shared Services/STSManagedFavouriteTweet.m"; sourceTree = "<group>"; };
+		F46037FD1B6EFFD600742DA0 /* STSFavoritesDataInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSFavoritesDataInteractor.h; sourceTree = "<group>"; };
+		F46037FE1B6EFFD600742DA0 /* STSFavoritesDataInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSFavoritesDataInteractor.m; sourceTree = "<group>"; };
+		F46038001B6EFFFB00742DA0 /* STSFavoritesDataInteractorInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STSFavoritesDataInteractorInterface.h; path = "SamsTweetShopper/Modules/Favorites Module/STSFavoritesDataInteractorInterface.h"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F460375B1B6E47FA00742DA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F46037741B6E47FA00742DA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F46037551B6E47FA00742DA0 = {
+			isa = PBXGroup;
+			children = (
+				F46037601B6E47FA00742DA0 /* SamsTweetShopper */,
+				F460377A1B6E47FA00742DA0 /* SamsTweetShopperTests */,
+				F460375F1B6E47FA00742DA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F460375F1B6E47FA00742DA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F460375E1B6E47FA00742DA0 /* SamsTweetShopper.app */,
+				F46037771B6E47FA00742DA0 /* SamsTweetShopperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F46037601B6E47FA00742DA0 /* SamsTweetShopper */ = {
+			isa = PBXGroup;
+			children = (
+				F46037E11B6EB8AB00742DA0 /* SCImageCacheService */,
+				F46037881B6E4AA500742DA0 /* Shared Services */,
+				F46037871B6E4A9800742DA0 /* Modules */,
+				F46037651B6E47FA00742DA0 /* AppDelegate.h */,
+				F46037661B6E47FA00742DA0 /* AppDelegate.m */,
+				F460376B1B6E47FA00742DA0 /* Main.storyboard */,
+				F460376E1B6E47FA00742DA0 /* Images.xcassets */,
+				F46037701B6E47FA00742DA0 /* LaunchScreen.xib */,
+				F46037611B6E47FA00742DA0 /* Supporting Files */,
+			);
+			path = SamsTweetShopper;
+			sourceTree = "<group>";
+		};
+		F46037611B6E47FA00742DA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F46037621B6E47FA00742DA0 /* Info.plist */,
+				F46037631B6E47FA00742DA0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F460377A1B6E47FA00742DA0 /* SamsTweetShopperTests */ = {
+			isa = PBXGroup;
+			children = (
+				F460377D1B6E47FA00742DA0 /* SamsTweetShopperTests.m */,
+				F460377B1B6E47FA00742DA0 /* Supporting Files */,
+			);
+			path = SamsTweetShopperTests;
+			sourceTree = "<group>";
+		};
+		F460377B1B6E47FA00742DA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F460377C1B6E47FA00742DA0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F46037871B6E4A9800742DA0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F46037DB1B6EB46100742DA0 /* Cells */,
+				F460378C1B6E4AE600742DA0 /* Favorites Module */,
+				F460378B1B6E4AD500742DA0 /* Search Results Module */,
+				F460378A1B6E4AC100742DA0 /* Search Input Module */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		F46037881B6E4AA500742DA0 /* Shared Services */ = {
+			isa = PBXGroup;
+			children = (
+				F46037C41B6E7BF000742DA0 /* STSConstants.h */,
+				F46037C51B6E7BF000742DA0 /* STSConstants.m */,
+				F46037EF1B6EDBE700742DA0 /* STSCoreDataManager.h */,
+				F46037F01B6EDBE700742DA0 /* STSCoreDataManager.m */,
+				F46037F21B6EDCC700742DA0 /* STSFavoritesDataModel.xcdatamodeld */,
+				F46037F51B6EDDC300742DA0 /* STSManagedFavouriteTweet.h */,
+				F46037F61B6EDDC300742DA0 /* STSManagedFavouriteTweet.m */,
+			);
+			name = "Shared Services";
+			sourceTree = "<group>";
+		};
+		F460378A1B6E4AC100742DA0 /* Search Input Module */ = {
+			isa = PBXGroup;
+			children = (
+				F46037A01B6E4F9000742DA0 /* Interactors */,
+				F46037A11B6E4F9000742DA0 /* Presenter */,
+				F46037A21B6E4F9000742DA0 /* Routing */,
+				F460378D1B6E4AF400742DA0 /* View */,
+			);
+			name = "Search Input Module";
+			sourceTree = "<group>";
+		};
+		F460378B1B6E4AD500742DA0 /* Search Results Module */ = {
+			isa = PBXGroup;
+			children = (
+				F46037D41B6EA1B400742DA0 /* Model Objects */,
+				F46037A31B6E4F9F00742DA0 /* Interactors */,
+				F46037A41B6E4F9F00742DA0 /* Presenter */,
+				F46037A51B6E4F9F00742DA0 /* Routing */,
+				F460378E1B6E4B0900742DA0 /* View */,
+			);
+			name = "Search Results Module";
+			sourceTree = "<group>";
+		};
+		F460378C1B6E4AE600742DA0 /* Favorites Module */ = {
+			isa = PBXGroup;
+			children = (
+				F460379E1B6E4F8000742DA0 /* Interactors */,
+				F460379D1B6E4F3100742DA0 /* Presenter */,
+				F460379F1B6E4F8000742DA0 /* Routing */,
+				F460378F1B6E4B0F00742DA0 /* View */,
+			);
+			name = "Favorites Module";
+			sourceTree = "<group>";
+		};
+		F460378D1B6E4AF400742DA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F46037961B6E4C3E00742DA0 /* STSSearchInputViewController.h */,
+				F46037971B6E4C3E00742DA0 /* STSSearchInputViewController.m */,
+				F46037A71B6E4FE900742DA0 /* STSSearchInputViewInterface.h */,
+			);
+			name = View;
+			path = "Modules/Search Input Module/View";
+			sourceTree = "<group>";
+		};
+		F460378E1B6E4B0900742DA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F46037931B6E4BCC00742DA0 /* STSSearchResultsViewController.h */,
+				F46037941B6E4BCC00742DA0 /* STSSearchResultsViewController.m */,
+				F46037A61B6E4FD400742DA0 /* STSSearchResultsViewInterface.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F460378F1B6E4B0F00742DA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F46037991B6E4E5E00742DA0 /* STSFavoritesViewController.h */,
+				F460379A1B6E4E5E00742DA0 /* STSFavoritesViewController.m */,
+				F460379C1B6E4EC600742DA0 /* STSFavoritesViewInterace.h */,
+			);
+			name = View;
+			path = "Modules/Favorites Module/View";
+			sourceTree = "<group>";
+		};
+		F460379D1B6E4F3100742DA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F46037A81B6E503800742DA0 /* STSFavoritesPresenter.h */,
+				F46037A91B6E503800742DA0 /* STSFavoritesPresenter.m */,
+				F46037AB1B6E504800742DA0 /* STSFavoritesPresenterInterface.h */,
+			);
+			name = Presenter;
+			path = "Modules/Favorites Module/Presenter";
+			sourceTree = "<group>";
+		};
+		F460379E1B6E4F8000742DA0 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				F46037FD1B6EFFD600742DA0 /* STSFavoritesDataInteractor.h */,
+				F46037FE1B6EFFD600742DA0 /* STSFavoritesDataInteractor.m */,
+				F46038001B6EFFFB00742DA0 /* STSFavoritesDataInteractorInterface.h */,
+			);
+			name = Interactors;
+			path = "Modules/Favorites Module/Interactors";
+			sourceTree = "<group>";
+		};
+		F460379F1B6E4F8000742DA0 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				F46037C01B6E78FA00742DA0 /* STSFavoritesModuleInterface.h */,
+				F46037C11B6E7ADA00742DA0 /* STSFavoritesWireframe.h */,
+				F46037C21B6E7ADA00742DA0 /* STSFavoritesWireframe.m */,
+			);
+			name = Routing;
+			path = "Modules/Favorites Module/Routing";
+			sourceTree = "<group>";
+		};
+		F46037A01B6E4F9000742DA0 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				F46037B41B6E5E1B00742DA0 /* STSTwitterAccessInteractor.h */,
+				F46037B51B6E5E1B00742DA0 /* STSTwitterAccessInteractor.m */,
+				F46037BB1B6E5E9600742DA0 /* STSTwitterAccessInteractorInterface.h */,
+				F46037B71B6E5E3D00742DA0 /* STSSearchTermValidInteractor.h */,
+				F46037B81B6E5E3D00742DA0 /* STSSearchTermValidInteractor.m */,
+				F46037BA1B6E5E7A00742DA0 /* STSSearchTermValidInteractorInterface.h */,
+			);
+			name = Interactors;
+			path = "Modules/Search Input Module/Interactors";
+			sourceTree = "<group>";
+		};
+		F46037A11B6E4F9000742DA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F46037B01B6E50A300742DA0 /* STSSearchInputPresenter.h */,
+				F46037B11B6E50A300742DA0 /* STSSearchInputPresenter.m */,
+				F46037B31B6E50B100742DA0 /* STSSearchInputPresenterInterface.h */,
+			);
+			name = Presenter;
+			path = "Modules/Search Input Module/Presenter";
+			sourceTree = "<group>";
+		};
+		F46037A21B6E4F9000742DA0 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				F46037BC1B6E784B00742DA0 /* STSSearchInputWireframe.h */,
+				F46037BD1B6E784B00742DA0 /* STSSearchInputWireframe.m */,
+				F46037BF1B6E786600742DA0 /* STSSearchInputModuleInterface.h */,
+			);
+			name = Routing;
+			path = "Modules/Search Input Module/Routing";
+			sourceTree = "<group>";
+		};
+		F46037A31B6E4F9F00742DA0 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				F46037CC1B6E9B9000742DA0 /* STSTwitterSearchInteractor.h */,
+				F46037CD1B6E9B9000742DA0 /* STSTwitterSearchInteractor.m */,
+				F46037CF1B6E9B9F00742DA0 /* STSTwitterSearchInteractorInterface.h */,
+				F46037D01B6E9BEE00742DA0 /* STSSearchFavoritesInteractor.h */,
+				F46037D11B6E9BEE00742DA0 /* STSSearchFavoritesInteractor.m */,
+				F46037D31B6E9C0100742DA0 /* STSSearchFavoritesInteractorInterface.h */,
+			);
+			name = Interactors;
+			path = "Modules/Search Results Module/Interactors";
+			sourceTree = "<group>";
+		};
+		F46037A41B6E4F9F00742DA0 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F46037AC1B6E506900742DA0 /* STSSearchResultsPresenter.h */,
+				F46037AD1B6E506900742DA0 /* STSSearchResultsPresenter.m */,
+				F46037AF1B6E507800742DA0 /* STSSearchResultsPresenterInterface.h */,
+			);
+			name = Presenter;
+			path = "Modules/Search Results Module/Presenter";
+			sourceTree = "<group>";
+		};
+		F46037A51B6E4F9F00742DA0 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				F46037C81B6E99D200742DA0 /* STSSearchResultsWireframe.h */,
+				F46037C91B6E99D200742DA0 /* STSSearchResultsWireframe.m */,
+				F46037CB1B6E99E300742DA0 /* STSSearchResultsModuleInterface.h */,
+			);
+			name = Routing;
+			path = "Modules/Search Results Module/Routing";
+			sourceTree = "<group>";
+		};
+		F46037D41B6EA1B400742DA0 /* Model Objects */ = {
+			isa = PBXGroup;
+			children = (
+				F46037D81B6EAF2600742DA0 /* STSSearchResultViewModel.h */,
+				F46037D91B6EAF2600742DA0 /* STSSearchResultViewModel.m */,
+				F46037E81B6EBC5600742DA0 /* STSSearchResultTweet.h */,
+				F46037E91B6EBC5600742DA0 /* STSSearchResultTweet.m */,
+			);
+			name = "Model Objects";
+			sourceTree = "<group>";
+		};
+		F46037DB1B6EB46100742DA0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F46037DC1B6EB49500742DA0 /* STSSearchResultTableViewCell.h */,
+				F46037DD1B6EB49500742DA0 /* STSSearchResultTableViewCell.m */,
+				F46037DE1B6EB49500742DA0 /* STSSearchResultTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		F46037E11B6EB8AB00742DA0 /* SCImageCacheService */ = {
+			isa = PBXGroup;
+			children = (
+				F46037E21B6EB8C500742DA0 /* SCImageCacheService.h */,
+				F46037E31B6EB8C500742DA0 /* SCImageCacheService.m */,
+				F46037E41B6EB8C500742DA0 /* SCNetworkService.h */,
+				F46037E51B6EB8C500742DA0 /* SCNetworkService.m */,
+			);
+			name = SCImageCacheService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F460375D1B6E47FA00742DA0 /* SamsTweetShopper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F46037811B6E47FA00742DA0 /* Build configuration list for PBXNativeTarget "SamsTweetShopper" */;
+			buildPhases = (
+				F460375A1B6E47FA00742DA0 /* Sources */,
+				F460375B1B6E47FA00742DA0 /* Frameworks */,
+				F460375C1B6E47FA00742DA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SamsTweetShopper;
+			productName = SamsTweetShopper;
+			productReference = F460375E1B6E47FA00742DA0 /* SamsTweetShopper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F46037761B6E47FA00742DA0 /* SamsTweetShopperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F46037841B6E47FA00742DA0 /* Build configuration list for PBXNativeTarget "SamsTweetShopperTests" */;
+			buildPhases = (
+				F46037731B6E47FA00742DA0 /* Sources */,
+				F46037741B6E47FA00742DA0 /* Frameworks */,
+				F46037751B6E47FA00742DA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F46037791B6E47FA00742DA0 /* PBXTargetDependency */,
+			);
+			name = SamsTweetShopperTests;
+			productName = SamsTweetShopperTests;
+			productReference = F46037771B6E47FA00742DA0 /* SamsTweetShopperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F46037561B6E47FA00742DA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = SamClewlow;
+				TargetAttributes = {
+					F460375D1B6E47FA00742DA0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					F46037761B6E47FA00742DA0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = F460375D1B6E47FA00742DA0;
+					};
+				};
+			};
+			buildConfigurationList = F46037591B6E47FA00742DA0 /* Build configuration list for PBXProject "SamsTweetShopper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F46037551B6E47FA00742DA0;
+			productRefGroup = F460375F1B6E47FA00742DA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F460375D1B6E47FA00742DA0 /* SamsTweetShopper */,
+				F46037761B6E47FA00742DA0 /* SamsTweetShopperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F460375C1B6E47FA00742DA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460376D1B6E47FA00742DA0 /* Main.storyboard in Resources */,
+				F46037721B6E47FA00742DA0 /* LaunchScreen.xib in Resources */,
+				F460376F1B6E47FA00742DA0 /* Images.xcassets in Resources */,
+				F46037E01B6EB49500742DA0 /* STSSearchResultTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F46037751B6E47FA00742DA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F460375A1B6E47FA00742DA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F46037CA1B6E99D200742DA0 /* STSSearchResultsWireframe.m in Sources */,
+				F46037F41B6EDCC700742DA0 /* STSFavoritesDataModel.xcdatamodeld in Sources */,
+				F46037951B6E4BCC00742DA0 /* STSSearchResultsViewController.m in Sources */,
+				F46037FF1B6EFFD600742DA0 /* STSFavoritesDataInteractor.m in Sources */,
+				F46037DA1B6EAF2600742DA0 /* STSSearchResultViewModel.m in Sources */,
+				F46037B61B6E5E1B00742DA0 /* STSTwitterAccessInteractor.m in Sources */,
+				F46037AA1B6E503800742DA0 /* STSFavoritesPresenter.m in Sources */,
+				F46037AE1B6E506900742DA0 /* STSSearchResultsPresenter.m in Sources */,
+				F460379B1B6E4E5E00742DA0 /* STSFavoritesViewController.m in Sources */,
+				F46037DF1B6EB49500742DA0 /* STSSearchResultTableViewCell.m in Sources */,
+				F46037B21B6E50A300742DA0 /* STSSearchInputPresenter.m in Sources */,
+				F46037F71B6EDDC300742DA0 /* STSManagedFavouriteTweet.m in Sources */,
+				F46037D21B6E9BEE00742DA0 /* STSSearchFavoritesInteractor.m in Sources */,
+				F46037671B6E47FA00742DA0 /* AppDelegate.m in Sources */,
+				F46037C61B6E7BF000742DA0 /* STSConstants.m in Sources */,
+				F46037E61B6EB8C500742DA0 /* SCImageCacheService.m in Sources */,
+				F46037641B6E47FA00742DA0 /* main.m in Sources */,
+				F46037E71B6EB8C500742DA0 /* SCNetworkService.m in Sources */,
+				F46037F11B6EDBE700742DA0 /* STSCoreDataManager.m in Sources */,
+				F46037B91B6E5E3D00742DA0 /* STSSearchTermValidInteractor.m in Sources */,
+				F46037C31B6E7ADA00742DA0 /* STSFavoritesWireframe.m in Sources */,
+				F46037EA1B6EBC5600742DA0 /* STSSearchResultTweet.m in Sources */,
+				F46037CE1B6E9B9000742DA0 /* STSTwitterSearchInteractor.m in Sources */,
+				F46037BE1B6E784B00742DA0 /* STSSearchInputWireframe.m in Sources */,
+				F46037981B6E4C3E00742DA0 /* STSSearchInputViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F46037731B6E47FA00742DA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F460377E1B6E47FA00742DA0 /* SamsTweetShopperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F46037791B6E47FA00742DA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F460375D1B6E47FA00742DA0 /* SamsTweetShopper */;
+			targetProxy = F46037781B6E47FA00742DA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F460376B1B6E47FA00742DA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F460376C1B6E47FA00742DA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F46037701B6E47FA00742DA0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F46037711B6E47FA00742DA0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F460377F1B6E47FA00742DA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F46037801B6E47FA00742DA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F46037821B6E47FA00742DA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SamsTweetShopper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F46037831B6E47FA00742DA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SamsTweetShopper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F46037851B6E47FA00742DA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SamsTweetShopperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SamsTweetShopper.app/SamsTweetShopper";
+			};
+			name = Debug;
+		};
+		F46037861B6E47FA00742DA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SamsTweetShopperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SamsTweetShopper.app/SamsTweetShopper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F46037591B6E47FA00742DA0 /* Build configuration list for PBXProject "SamsTweetShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F460377F1B6E47FA00742DA0 /* Debug */,
+				F46037801B6E47FA00742DA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F46037811B6E47FA00742DA0 /* Build configuration list for PBXNativeTarget "SamsTweetShopper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F46037821B6E47FA00742DA0 /* Debug */,
+				F46037831B6E47FA00742DA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F46037841B6E47FA00742DA0 /* Build configuration list for PBXNativeTarget "SamsTweetShopperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F46037851B6E47FA00742DA0 /* Debug */,
+				F46037861B6E47FA00742DA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F46037F21B6EDCC700742DA0 /* STSFavoritesDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F46037F31B6EDCC700742DA0 /* STSFavoritesDataModel.xcdatamodel */,
+			);
+			currentVersion = F46037F31B6EDCC700742DA0 /* STSFavoritesDataModel.xcdatamodel */;
+			path = STSFavoritesDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F46037561B6E47FA00742DA0 /* Project object */;
+}
