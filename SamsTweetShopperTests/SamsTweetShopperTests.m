@@ -36,6 +36,14 @@
     XCTAssertTrue(valid, @"String should be valid");
 }
 
+- (void)testInvalidString {
+    
+    STSSearchTermValidInteractor *interactor = [[STSSearchTermValidInteractor alloc] init];
+    
+    BOOL valid = [interactor isSearchTermValid:@"String contains too many search terms more than nine terms"];
+    
+    XCTAssertTrue(valid, @"String should be valid");
+}
 
 
 @end
