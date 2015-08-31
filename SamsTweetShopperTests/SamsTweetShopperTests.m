@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
+#import "STSSearchTermValidInteractor.h"
+
 @interface SamsTweetShopperTests : XCTestCase
 
 @end
@@ -25,16 +27,15 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testValidString {
+    
+    STSSearchTermValidInteractor *interactor = [[STSSearchTermValidInteractor alloc] init];
+    
+    BOOL valid = [interactor isSearchTermValid:@"String!"];
+    
+    XCTAssertTrue(valid, @"String should be valid");
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
+
 
 @end
