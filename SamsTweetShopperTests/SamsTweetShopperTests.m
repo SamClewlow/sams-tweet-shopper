@@ -42,7 +42,7 @@
     
     BOOL valid = [interactor isSearchTermValid:@"String contains too many search terms more than nine terms"];
     
-    XCTAssertTrue(valid, @"String should be valid");
+    XCTAssertFalse(valid, @"String should be valid");
 }
 
 
